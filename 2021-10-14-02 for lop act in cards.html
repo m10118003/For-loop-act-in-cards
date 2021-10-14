@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #FEDFE1;
+            border: 4px;
+            border-radius: 15px;
+            border-style: outset;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        h3 {
+            margin-left: 10px;
+        }
+        
+        img {
+            width: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="card">
+        <!-- <img class="meme" src="https:i.imgur.com/SMdAOGT.png" > -->
+    </section>
+
+    <script>
+        // let card = document.querySelector('.card');
+
+        // for (let i = 0; i < 6; i++) {
+        //     card.innerHTML = card.innerHTML + '<div><h3>我是卡片' + (i+ 1)+ '</h3><img class="meme" src="https://i.imgur.com/SMdAOGT.png"><p>覆蓋一張牌, 結束這回合 !</p></div>';
+        // }
+
+        let card = document.querySelector('.card');
+
+        for (let i = 0; i < 6; i++) {
+            card.innerHTML = card.innerHTML + `<div><h3>我是卡片 ${(i + 1)} </h3><img class="meme" src="https://i.imgur.com/SMdAOGT.png"><p>覆蓋一張牌, 結束這回合 !</p></div>`;
+        }
+    </script>
+</body>
+
+</html>
